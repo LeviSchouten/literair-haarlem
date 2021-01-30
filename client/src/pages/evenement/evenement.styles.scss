@@ -1,0 +1,67 @@
+.evenement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .textarea {
+    width: 450px;
+    padding-right: 50px;
+    border-right: 1px solid black;
+    .title {
+      font-size: 40px;
+    }
+
+    .date {
+      padding-top: 15px;
+      font-size: 18px;
+    }
+
+    .content-long {
+      padding-top: 25px;
+      font-size: 19px;
+    }
+
+    .price {
+      padding-top: 50px;
+      font-size: 19px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .location {
+      padding-top: 20px;
+      font-size: 19px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .image {
+    margin-top: 30px;
+    width: 380px;
+    height: 480px;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .evenement {
+    display: flex;
+    flex-direction: column;
+
+    .textarea {
+      width: 80vw;
+      border: none;
+      padding: 0;
+
+      .title {
+        font-size: 30px;
+      }
+
+      .content-long {
+        font-size: 16px;
+      }
+    }
+
+    .image {
+      width: 80vw;
+    }
+  }
+}

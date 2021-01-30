@@ -1,0 +1,22 @@
+.footer {
+  max-height: 150px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 120px 100px;
+
+  ul {
+    list-style: none;
+
+    li {
+      padding-top: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding: 20px;
+    padding: 0;
+  }
+}

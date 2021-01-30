@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .content {
+    flex: 1;
+    margin: 30px auto;
+    width: 80vw;
+    max-width: 1000px;
+    font-family: 'Merriweather', serif;
+  }
+
+  .display-none {
+    display: none;
+  }
+}

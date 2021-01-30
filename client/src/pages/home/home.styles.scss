@@ -1,0 +1,131 @@
+.home {
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      max-width: 360px;
+      font-size: 19px;
+      color: rgba(0, 0, 0, 0.82);
+      padding-bottom: 15px;
+    }
+
+    .dinner-image {
+      width: 435px;
+      height: 295px;
+    }
+
+    .title {
+      font-size: 43px;
+      padding-bottom: 13px;
+    }
+
+    .walls-image {
+      width: 400px;
+      height: auto;
+    }
+
+    .text {
+      padding-top: 30px;
+    }
+  }
+
+  .socials {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-centered {
+      font-size: 35px;
+      padding-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .social-buttons {
+      button {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 265px;
+      }
+
+      .newsletter-button {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+
+      .title {
+        font-size: 35px;
+      }
+
+      img {
+        padding-bottom: 40px;
+      }
+
+      p {
+        padding-bottom: 40px;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+
+    .socials {
+      .title-centered {
+        font-size: 35px;
+      }
+
+      .social-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & > * {
+          margin: 20px;
+        }
+
+        .newsletter-button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 1000px) {
+//   // start using vw and vh here !!
+
+//   .home {
+//     .section {
+//       display: flex;
+//       flex-direction: column;
+
+//       p {
+//         font-size: 19px;
+//         color: rgba(0, 0, 0, 0.82);
+//         padding-bottom: 15px;
+//       }
+//     }
+
+//     hr {
+//       display: none;
+//     }
+//   }
+// }

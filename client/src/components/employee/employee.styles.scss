@@ -1,0 +1,62 @@
+.employee {
+  padding-bottom: 70px;
+
+  .image {
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  .employee-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+    .employee-title {
+      padding-left: 30px;
+      padding-bottom: 20px;
+
+      .employee-name {
+        font-size: 35px;
+      }
+
+      .employee-position {
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.66);
+      }
+    }
+  }
+
+  .employee-content {
+    width: 435px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .employee {
+    .image {
+      width: 100px;
+      height: 100px;
+    }
+
+    .employee-header {
+      .employee-title {
+        .employee-name {
+          font-size: 25px;
+        }
+
+        .employee-position {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .employee-content {
+      max-width: 85vw;
+      font-size: 19px;
+    }
+  }
+}

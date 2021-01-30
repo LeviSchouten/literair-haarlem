@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empty_walls",
+  "info": {
+    "name": "EmptyWall"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "locatie": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "informatie": {
+      "type": "richtext"
+    }
+  }
+}

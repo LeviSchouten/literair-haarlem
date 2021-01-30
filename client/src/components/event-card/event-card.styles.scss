@@ -1,0 +1,55 @@
+.event-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 40px;
+  margin: 50px 0;
+
+  .section {
+    max-width: 480px;
+  }
+  .date {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  .title {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+
+  .content-short {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .read-more {
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .image {
+    width: 320px;
+    height: 240px;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .event-card {
+    .title {
+      font-size: 25px;
+    }
+
+    .content-short {
+      font-size: 15px;
+    }
+
+    .image {
+      display: none;
+    }
+  }
+}

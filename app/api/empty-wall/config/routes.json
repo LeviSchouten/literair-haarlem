@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/empty-walls",
+      "handler": "empty-wall.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empty-walls/count",
+      "handler": "empty-wall.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empty-walls/:id",
+      "handler": "empty-wall.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/empty-walls",
+      "handler": "empty-wall.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/empty-walls/:id",
+      "handler": "empty-wall.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/empty-walls/:id",
+      "handler": "empty-wall.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

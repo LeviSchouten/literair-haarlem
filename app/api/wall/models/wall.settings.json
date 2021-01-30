@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "walls",
+  "info": {
+    "name": "Wall"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "gedicht": {
+      "type": "richtext"
+    },
+    "auteur": {
+      "type": "string"
+    },
+    "locatie": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.navbar {
+  background-color: white;
+  margin: 50px;
+  margin-bottom: 40px;
+
+  .title {
+    font-weight: bold;
+    font-size: 34px;
+  }
+
+  .item {
+    color: black;
+    font-size: 22px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    margin: 30px;
+
+    .title {
+      font-size: 25px;
+    }
+
+    .item {
+      font-size: 20px;
+    }
+  }
+}
